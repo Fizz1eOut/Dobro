@@ -1,0 +1,144 @@
+/* ------------- */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+  font-family: 'Raleway', sans-serif;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+/* var-color */
+:root {
+  --color-white: #FFFFFF;
+  --color-green: #5ECF08;
+  --color-black: #3D3D3D;
+  --color-hover: #109915;
+}
+
+/* title */
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%;
+  color: var(--color-black);
+  }  
+  @media (max-width: 499.98px) {
+ 
+  }
+
+/* border */
+.border-style { 
+  display: inline-block; 
+  cursor: pointer;
+}
+.border-style:after {
+  display:block;
+  content: '';
+  border-bottom: 1px solid var(--color-hover);  
+  transform: scaleX(0);  
+  transition: transform 0.4s ease-in-out;
+}
+.border-style:hover:after {
+  transform: scaleX(1); 
+}
+/* number */
+.phone-number {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+  color: var(--color-black);
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+.phone-number:hover {
+  color: var(--color-hover);
+}
+@media (max-width: 480px) {
+  .phone-number {
+    font-size: 16px;
+  }
+}
+/* mail */
+.mail {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+.mail:hover {
+  color: var(--color-hover);
+}
+
+@media (max-width: 480px) {
+  .mail {
+    font-size: 16px;
+  }
+}
+/* container */
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 991px) {
+  
+}
+
+@media (max-width: 768px) {
+  [class*="__container"] {
+      max-width: none;
+      padding: 0 20px;
+  }
+}
+
+@media (max-width: 499px) {
+
+}
