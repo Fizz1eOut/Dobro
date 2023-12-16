@@ -61,11 +61,13 @@ body {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 143%;
+  line-height: 110%;
   color: var(--color-black);
   }  
   @media (max-width: 499.98px) {
- 
+    .title {
+      font-size: 25px;
+    }
   }
 
 /* border */

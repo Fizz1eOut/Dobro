@@ -24,6 +24,12 @@ document.addEventListener('click', (e) => {
   } else {
     unlockScroll();
   }
+  if (e.target.classList.contains('nav__link')) {
+    burger.classList.remove('burger--active');
+    menu.classList.remove('open');
+    overlay.classList.remove('open');
+    unlockScroll();
+  }
 });
 
 overlay.addEventListener('click', () => {
