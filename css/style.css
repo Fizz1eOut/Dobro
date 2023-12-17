@@ -500,8 +500,7 @@
   flex: 0 1 63%;
   display: none;
 }
-.dentistry {
-}
+
 .tabs__content--active {
   display: block;
 }
@@ -517,7 +516,7 @@
   color: var(--color-black);
 }
 .dentistry__list {
-  padding-top: 60px;
+  margin-top: 60px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -601,11 +600,7 @@
   line-height: 143%;
   color: var(--color-black);
 }
-.dentistry__row {
-}
 
-.tabs__content {
-}
 .content-tabs {
   padding-top: 50px;
 }
@@ -632,8 +627,7 @@
 .content-tabs__subtitle:last-child {
   padding-top: 20px;
 }
-.content-tabs-list {
-}
+
 .content-tabs__item:not(:last-child) {
   padding-bottom: 10px;
 }
@@ -707,6 +701,9 @@
   .services {
     padding-top: 70px;
   }
+  .dentistry__list {
+    margin-top: 30px;
+  }
   .tabs__title {
     margin-bottom: 40px;
   }
@@ -716,7 +713,114 @@
   .content-tabs__scripture {
     font-size: 16px;
   }
-  .tabs__title {
-    font-size: 30px;
+  .dentistry__title {
+    font-size: 25px;
+  }
+}
+
+/* about-clinick */
+.about-clinick {
+  padding-top: 100px;
+}
+.about-clinick__title {
+  text-align: center;
+}
+.about-clinick__body {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.about-clinick__slider {
+  max-width: 570px;
+  position: relative;
+}
+.swiper-clinick__pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background: #D9D9D9;
+  padding: 2px 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  transition:  all 0.3s ease-in-out 0s;
+}
+.swiper-clinick__pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-green);
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -30px;
+} 
+
+.about-clinick__content {
+  width: 50%;
+}
+.about-clinick__content > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.about-clinick__text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+  color: #000;
+}
+.about-clinick__subtext {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+  color: #000;
+}
+.about-clinick__subtext::before {
+  content: '';
+  display: block;
+  min-width: 40px;
+  height: 40px;
+  background-image: url(../img/about-clinick/healthcare.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  .about-clinick__body {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+  .about-clinick__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-clinick__slider {
+    max-width: 100%;
+  }
+  .swiper-clinick__slide img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 499px) {
+  .about-clinick__body {
+    margin-top: 30px;
+  }
+  .about-clinick {
+    padding-top: 70px;
+}
+  .about-clinick__text {
+    font-size: 16px;
+  }
+  .about-clinick__subtext {
+    font-size: 16px;
+  }
+  .about-clinick__subtext::before { 
+    min-width: 30px;
+    height: 30px;
   }
 }

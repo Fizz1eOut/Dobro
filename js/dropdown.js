@@ -1,27 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 	const menuBtns = document.querySelectorAll('.dentistry__button');
-	const drops = document.querySelectorAll('.dropdown');
+	const dropdown = document.querySelectorAll('.dropdown');
 
 	menuBtns.forEach(el => {
 		el.addEventListener('click', (e) => {
-			let currentBtn = e.currentTarget;
-			let drop = currentBtn.closest('.dentistry__item').querySelector('.dropdown');
+			let drop = e.target.closest('.dentistry__item').querySelector('.dropdown');
 
 			menuBtns.forEach(el => {
-				if (el !== currentBtn) {
+				if (el !== e.target) {
 					el.classList.remove('dentistry__button--active');
 				}
 			});
 
-			drops.forEach(el => {
+			dropdown.forEach(el => {
 				if (el !== drop) {
 					el.classList.remove('dropdown--active');
 				}
 			});
 
 			drop.classList.toggle('dropdown--active');
-			currentBtn.classList.toggle('dentistry__button--active');
+			e.target.classList.toggle('dentistry__button--active');
 		});
 	});
 
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				el.classList.remove('dentistry__button--active');
 			});
 
-			drops.forEach(el => {
+			dropdown.forEach(el => {
 				el.classList.remove('dropdown--active');
 			});
 		}
