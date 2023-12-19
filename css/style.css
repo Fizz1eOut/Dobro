@@ -55,7 +55,7 @@
 .adress::before {
   content: "";
   display: inline-block;
-  width: 25px;
+  width: 26px;
   height: 30px;
   background-image: url(../img/header/marker.png);
   background-repeat: no-repeat;
@@ -364,6 +364,7 @@
     margin-bottom: 10px;
   }
   .nav {
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -452,6 +453,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  border-radius: 15px;
 }
 .tabs__group::after {
   content: '';
@@ -735,6 +737,12 @@
 .about-clinick__slider {
   max-width: 570px;
   position: relative;
+  
+}
+.swiper-clinick__slide img {
+  border-radius: 15px;
+  width: 100%;
+
 }
 .swiper-clinick__pagination .swiper-pagination-bullet {
   opacity: 1;
@@ -748,7 +756,7 @@
 .swiper-clinick__pagination .swiper-pagination-bullet-active {
   background-color: var(--color-green);
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-clinick__pagination.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: -30px;
 } 
 
@@ -822,5 +830,290 @@
   .about-clinick__subtext::before { 
     min-width: 30px;
     height: 30px;
+  }
+}
+
+/* reviews */
+.reviews {
+  padding-top: 130px;
+}
+.reviews__title {
+  text-align: center;
+}
+.reviews__slider {
+  margin-top: 50px;
+  position: relative;
+}
+.reviews__swiper {
+}
+.swiper {
+}
+.reviews__wrapper {
+}
+.swiper-wrapper {
+}
+.reviews__slide {
+  height: auto;
+}
+.reviews__content {
+  border-radius: 15px;
+  border: 2px solid #D9D9D9;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.reviews__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.reviews__name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-green);
+}
+.reviews__date {
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170.523%
+}
+.reviews__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170.523%;
+  color: var(--color-black);
+}
+
+.reviews__pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background: #D9D9D9;
+  padding: 2px 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  transition:  all 0.3s ease-in-out 0s;
+}
+.reviews__pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-green);
+}
+
+@media (max-width: 768px) {
+  .reviews__row {
+    flex-wrap: wrap;
+  }
+  .reviews__content {
+    padding: 15px;
+  }
+}
+@media (max-width: 499px) {
+  .reviews {
+    padding-top: 100px;
+  }
+}
+
+/* contacts */
+
+.contacts {
+  padding-top: 130px;
+}
+.contacts__container {
+}
+.container {
+}
+.contacts__title {
+  text-align: center;
+}
+.title {
+}
+.contacts__items {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contacts__item {
+}
+.item-contacts {
+}
+.item-contacts__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.item-contacts__title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 143%;
+  color: var(--color-black);
+}
+.item-contacts__text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+  color: var(--color-black);
+}
+.contacts__maps {
+  margin-top: 30px;
+}
+.contacts__maps iframe {
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .contacts__items {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .contacts__item {
+    max-width: 210px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 499px) {
+  .contacts {
+    padding-top: 100px;
+  }
+  .contacts__items { 
+    margin-top: 30px;
+  }
+}
+
+/* footer */
+.footer {
+}
+.footer__container {
+}
+.container {
+}
+.footer__copyright {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%; 
+  color: var(--color-black);
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 499px) {
+  .footer__copyright {
+    padding: 30px 0;
+  }
+}
+
+
+/* scroll-top */
+.btn-top {
+  display: none;
+  cursor: pointer;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 29;
+  width: 50px;
+  height: 50px;
+  background: url(../img/arrow-top.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* phone-call */
+.phone-call {
+  width: 50px;
+  height: 50px;
+  right: 30px;
+  bottom: 80px;
+  /* background: #10b418; */
+  position: fixed;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99;
+display: inline-block;
+line-height: 65px;
+}
+
+.phone-call:before {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  background-color: #109915;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  opacity: 0.6;
+  -webkit-animation: pulse 1s ease-out;
+  animation: pulse 1.8s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+  }
+  25% {
+      -webkit-transform: scale(0.3);
+      opacity: 1;
+  }
+  50% {
+      -webkit-transform: scale(0.6);
+      opacity: .6;
+  }
+  75% {
+      -webkit-transform: scale(0.9);
+      opacity: .3;
+  }
+  100% {
+      -webkit-transform: scale(1);
+      opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0);
+      opacity: 0;
+  }
+  25% {
+      transform: scale(0.3);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(0.6);
+      opacity: .6;
+  }
+  75% {
+      transform: scale(0.9);
+      opacity: .3;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
   }
 }

@@ -21,9 +21,12 @@ document.addEventListener('click', (e) => {
     menu.classList.toggle('open');
     overlay.classList.toggle('open');
     lockScroll();
-  } else {
+  }
+
+  if (!e.target.classList.contains('burger--active')) {
     unlockScroll();
   }
+
   if (e.target.classList.contains('nav__link')) {
     burger.classList.remove('burger--active');
     menu.classList.remove('open');
