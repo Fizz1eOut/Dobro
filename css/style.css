@@ -844,14 +844,6 @@
   margin-top: 50px;
   position: relative;
 }
-.reviews__swiper {
-}
-.swiper {
-}
-.reviews__wrapper {
-}
-.swiper-wrapper {
-}
 .reviews__slide {
   height: auto;
 }
@@ -882,7 +874,8 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 170.523%
+  line-height: 170.523%;
+  font-family: 'Montserrat', sans-serif;
 }
 .reviews__text {
   font-size: 14px;
@@ -924,15 +917,11 @@
 .contacts {
   padding-top: 130px;
 }
-.contacts__container {
-}
-.container {
-}
+
 .contacts__title {
   text-align: center;
 }
-.title {
-}
+
 .contacts__items {
   margin-top: 50px;
   display: flex;
@@ -940,10 +929,7 @@
   justify-content: space-between;
   gap: 10px;
 }
-.contacts__item {
-}
-.item-contacts {
-}
+
 .item-contacts__row {
   display: flex;
   align-items: flex-start;
@@ -993,12 +979,7 @@
 }
 
 /* footer */
-.footer {
-}
-.footer__container {
-}
-.container {
-}
+
 .footer__copyright {
   text-align: center;
   padding: 50px 0;
@@ -1036,13 +1017,13 @@
   border: none;
 }
 
-/* phone-call */
+/* phone-call
 .phone-call {
   width: 50px;
   height: 50px;
   right: 30px;
   bottom: 80px;
-  /* background: #10b418; */
+  background: #10b418; 
   position: fixed;
   text-align: center;
   color: #ffffff;
@@ -1116,4 +1097,65 @@ line-height: 65px;
       transform: scale(1);
       opacity: 0;
   }
+} 
+*/
+
+.phone-call {
+  display: inline-block;
+  background-color: transparent;
+  right: 30px;
+  bottom: 80px;
+  position: fixed;
+}
+.phone-call__dropdown {
+}
+.dropwond-phone__list {
+  position: absolute;
+  opacity: 0; 
+  visibility: hidden; 
+  bottom: 40px;
+  left: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border-radius: 25px 25px 0 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.dropwond-phone__list--active {
+  opacity: 1;
+  visibility: visible;
+}
+.dropwond-phone__item {
+}
+.dropwond-phone__link {
+}
+.phone-call__button {
+  position: relative;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 25px;
+}
+.phone-call__button img {
+  background-color: transparent;
+}
+.phone {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.phone-call__button--active .phone {
+  opacity: 0;
+  visibility: hidden;
+}
+.cancel {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 48px;
+  height: 48px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.phone-call__button--active .cancel {
+  opacity: 1;
+  visibility: visible;
 }

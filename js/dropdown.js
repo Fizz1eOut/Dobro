@@ -35,4 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		}
 	});
+
+	const phoneBtn = document.querySelector('.phone-call__button');
+	const phoneDropdown = document.querySelector('.dropwond-phone__list');
+
+	phoneBtn.addEventListener('click', (e) => {
+		if (e.target.closest('.phone-call__button')) {
+			// console.log(e.target)
+			phoneBtn.classList.toggle('phone-call__button--active');
+			phoneDropdown.classList.toggle('dropwond-phone__list--active');
+		}
+	});
 });

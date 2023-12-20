@@ -2,7 +2,7 @@ const button = document.querySelector('.btn-top');
 
 const displayButton = () => {
   window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
   
     if (window.scrollY > 100) {
       button.style.display = "block";
@@ -19,7 +19,7 @@ const scrollToTop = () => {
       left: 0,
       behavior: 'smooth'
     }); 
-    console.log(event);
+    // console.log(event);
   });
 };
 
