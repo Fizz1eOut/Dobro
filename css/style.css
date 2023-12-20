@@ -1106,6 +1106,7 @@ line-height: 65px;
   right: 30px;
   bottom: 80px;
   position: fixed;
+  z-index: 9;
 }
 .phone-call__dropdown {
 }
