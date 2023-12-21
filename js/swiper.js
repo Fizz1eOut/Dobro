@@ -1,5 +1,10 @@
 
 new Swiper('.swiper-clinick',{
+  navigation: {
+    nextEl: '.swiper-clinick__button.swiper-button-next',
+    prevEl: '.swiper-clinick__button.swiper-button-prev',
+  },
+
   pagination: {
     el: '.swiper-clinick__pagination.swiper-pagination',
     clickable: true,
@@ -53,6 +58,10 @@ new Swiper('.swiper-clinick',{
 
 
 new Swiper('.reviews__swiper',{
+  navigation: {
+    nextEl: '.reviews__button.swiper-button-next',
+    prevEl: '.reviews__button.swiper-button-prev',
+  },
   pagination: {
     el: '.reviews__pagination.swiper-pagination',
     clickable: true,
