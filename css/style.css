@@ -844,7 +844,7 @@
 }
 @media (max-width: 499px) {
   .swiper-clinick__title {
-    
+    font-size: 25px;
   }
 }
 
