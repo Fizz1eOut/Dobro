@@ -801,14 +801,14 @@
   justify-content: space-between;
   position: absolute;
   height: 30px;
-  bottom: -70px;
+  bottom: -80px;
   left: 43%;
 }
 .swiper-clinick__button.swiper-button-prev,
 .swiper-clinick__button.swiper-button-next {
   position: static;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -819,12 +819,41 @@
 .swiper-clinick__button.swiper-button-prev {
   transform: rotate(-180deg);
 }
+.swiper-clinick__title {
+  padding-top: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.swiper-clinick__fullname {
+  padding-top: 10px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--color-black);
+  text-align: center;
+}
+.swiper-clinick__profession {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--color-black);
+  padding-top: 10px;
+  text-align: center;
+}
+@media (max-width: 499px) {
+  .swiper-clinick__title {
+    
+  }
+}
+
 
 @media (max-width: 991px) {
   .about-clinick__body {
     flex-direction: column;
     align-items: center;
-    row-gap: 40px;
+    row-gap: 50px;
   }
   .about-clinick__content {
     width: 100%;
@@ -942,8 +971,8 @@
 .reviews__button.swiper-button-prev,
 .reviews__button.swiper-button-next {
   position: static;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -976,7 +1005,6 @@
 }
 
 /* contacts */
-
 .contacts {
   padding-top: 130px;
 }
@@ -1171,7 +1199,7 @@ line-height: 65px;
   right: 30px;
   bottom: 80px;
   position: fixed;
-  z-index: 9;
+  z-index: 10;
 }
 .phone-call__dropdown {
 }
